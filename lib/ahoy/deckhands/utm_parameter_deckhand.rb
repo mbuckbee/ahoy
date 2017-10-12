@@ -13,7 +13,7 @@ module Ahoy
         end
       end
 
-      %w(utm_source utm_medium utm_term utm_content utm_campaign).each do |name|
+      %w(utm_source utm_medium utm_term utm_content utm_campaign ref).each do |name|
         define_method name do
           @params[name] || landing_params[name]
         end
